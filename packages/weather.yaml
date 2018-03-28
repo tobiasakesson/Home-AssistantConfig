@@ -1,0 +1,17 @@
+#
+# Weather
+#
+
+sensor:
+  - platform: darksky
+    api_key: !secret darksky_api
+    units: si
+    monitored_conditions:
+      - summary
+      - icon
+      - temperature
+    update_interval:
+      days: 0
+      hours: 0
+      minutes: 3
+      seconds: 0

@@ -1,0 +1,90 @@
+
+dsldevicelan:
+  hide_if_away: false
+  icon:
+  mac: E0:B9:E5:EE:2F:62
+  name: dsldevice.lan
+  picture:
+  track: false
+  vendor: Technicolor
+
+sonoszplan:
+  hide_if_away: false
+  icon:
+  mac: 5C:AA:FD:30:E0:AC
+  name: SonosZP.lan
+  picture:
+  track: false
+  vendor: unknown
+
+tg799tsvacxtreamapee2f6clan:
+  hide_if_away: false
+  icon:
+  mac: E2:B9:E5:EE:2F:6B
+  name: TG799TSvacXtream-AP-EE2F6C.lan
+  picture:
+  track: false
+  vendor: unknown
+
+oneplus_3tlan:
+  hide_if_away: false
+  icon:
+  mac: C0:EE:FB:FA:52:E6
+  name: Tobias Telefon
+  picture:
+  track: true
+  vendor: OnePlus Tech (Shenzhen) Ltd
+
+tobiassmbplan:
+  hide_if_away: false
+  icon:
+  mac: 3C:15:C2:D7:DB:2A
+  name: Tobias Mac
+  picture:
+  track: true
+  vendor: Apple, Inc.
+
+rebeccasiphonelan:
+  hide_if_away: false
+  icon:
+  mac: 48:4B:AA:18:01:FC
+  name: Rebeccas Telefon
+  picture:
+  track: true
+  vendor: Apple, Inc.
+
+70af24092859:
+  hide_if_away: false
+  icon:
+  mac: 70:AF:24:09:28:59
+  name: 70af24092859
+  picture:
+  track: false
+  vendor: TP Vision Belgium NV
+
+chromecastlan:
+  hide_if_away: false
+  icon:
+  mac: 6C:AD:F8:BF:40:90
+  name: Chromecast.lan
+  picture:
+  track: false
+  vendor: AzureWave Technology Inc.
+
+rebeccasairlan:
+  hide_if_away: false
+  icon:
+  mac: 5C:F9:38:93:67:30
+  name: Rebeccas Macbook
+  picture:
+  track: true
+  vendor: Apple, Inc.
+
+00178877c894:
+  hide_if_away: false
+  icon:
+  mac: 00:17:88:77:C8:94
+  name: 00178877c894
+  picture:
+  track: false
+  vendor: Philips Lighting BV

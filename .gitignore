@@ -1,0 +1,12 @@
+home-assitant.log
+secrets.yaml
+deps
+tts
+.uuid
+.ios.conf
+*.log
+*.xml
+*.db
+*.db-journal 
+*.db-shm 
+*.db-wal

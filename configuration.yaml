@@ -1,0 +1,57 @@
+
+homeassistant:
+  name: Home
+  latitude: !secret latitude
+  longitude: !secret longitude
+  elevation: !secret elevation
+  unit_system: metric
+  time_zone: Europe/Stockholm
+  customize: !include customize.yaml
+  packages: !include_dir_named packages
+
+map:
+
+introduction:
+
+frontend:
+
+config:
+
+http:
+  # Secrets are defined in the file secrets.yaml
+  # api_password: !secret http_password
+  # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+  # base_url: example.duckdns.org:8123
+
+updater:
+
+discovery:
+
+conversation:
+
+history:
+
+logbook:
+
+map:
+
+sun:
+
+# Tracks devices on network
+device_tracker:
+  - platform: nmap_tracker
+    hosts: 192.168.1.0/24
+    home_interval: 1
+    exclude:
+     - 192.168.1.211
+
+tts:
+  - platform: google
+
+# Philips hue
+light: 
+  - platform: hue
+    host: 192.168.1.116
+
+automation: !include automations.yaml
+script: !include scripts.yaml

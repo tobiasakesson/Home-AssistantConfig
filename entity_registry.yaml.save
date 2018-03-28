@@ -1,0 +1,20 @@
+media_player.medierum:
+  name:
+  platform: sonos
+  unique_id: RINCON_5CAAFD30E0AC01400
+media_player.akesson:
+  name:
+  platform: cast
+  unique_id: e569b026-1a4c-e3c3-159c-e3e93e6c4767
+light.hue_color_lamp_3:
+  name: Taklampa
+  platform: hue
+  unique_id: 00:17:88:01:03:01:b9:3f-0b
+light.hue_color_lamp_1:
+  name: Soffa
+  platform: hue
+  unique_id: 00:17:88:01:03:01:c0:9a-0b
+light.hue_color_lamp_2:
+  name: Matbord
+  platform: hue
+  unique_id: 00:17:88:01:03:01:c0:ce-0b

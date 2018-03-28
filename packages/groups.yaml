@@ -1,0 +1,41 @@
+
+##
+## Groups
+##
+
+group:
+
+  ####
+  #### Views
+  ####
+
+  Default View:
+    view: yes
+    icon: mdi:earth
+    entities:
+      - group.vardagsrum
+
+  Test View:
+    view: yes
+    icon: mdi:work
+    entities:
+      - group.workday
+
+
+  ###
+  ### Rooms
+  ###
+
+  Vardagsrum:
+    - light.hue_color_lamp_1
+
+
+
+  ###
+  ### Workday
+  ###
+
+  Workday:
+    - binary_sensor.workday
+    - binary_sensor.workday_tomorrow
+

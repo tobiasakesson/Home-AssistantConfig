@@ -1,0 +1,18 @@
+## Reads server values, such as CPU usage
+
+homeassistant:
+  customize:
+    sensor.disk_use_percent_:
+      friendly_name: Disk usage
+    sensor.memory_use_percent:
+      friendly_name: Memory usage
+    sensor.processor_use:
+      friendly_name: CPU Load
+
+sensor:
+  - platform: systemmonitor
+    resources:
+      - type: disk_use_percent
+        arg: /home
+      - type: memory_use_percent
+      - type: processor_use

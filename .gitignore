@@ -4,6 +4,7 @@ deps
 tts
 .uuid
 .ios.conf
+*.conf
 *.log
 *.xml
 *.db

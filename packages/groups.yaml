@@ -1,41 +1,63 @@
 
-##
+
 ## Groups
-##
+
 
 group:
 
-  ####
   #### Views
-  ####
 
   Default View:
     view: yes
     icon: mdi:earth
     entities:
       - group.vardagsrum
+      - group.sovrum
+      - group.weather
 
-  Test View:
+  Work View:
     view: yes
-    icon: mdi:work
+    icon: mdi:worker
     entities:
       - group.workday
+  
+  Network View:
+    view: yes
+    icon: mdi:server-network
+    entities:
+      - group.network
+      - group.server
 
-
-  ###
   ### Rooms
-  ###
 
   Vardagsrum:
     - light.hue_color_lamp_1
+    - light.hue_color_lamp_2
 
+  Sovrum:
+    - light.hue_color_lamp_3
 
-
-  ###
   ### Workday
-  ###
 
   Workday:
     - binary_sensor.workday
     - binary_sensor.workday_tomorrow
 
+  ### Network/Server
+
+  Network:
+    - sensor.speedtest_download
+    - sensor.speedtest_upload
+    - sensor.speedtest_ping
+ 
+  Server:
+    - sensor.disk_use_percent_
+    - sensor.memory_use_percent
+    - sensor.processor_use
+
+  ### Weather
+
+  Weather:
+    - sensor.dark_sky_summary
+    - sensor.dark_sky_temperature
+    - sun.sun

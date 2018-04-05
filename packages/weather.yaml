@@ -29,4 +29,4 @@ sensor:
 #    action:
 #      service: notify.ios.tobias_iphone
 #      data:
-#        message: Right now it is {{ states("sensor.dark_sky_summary") } and it is {{ states("sensor.dark_sky_temperature") } 
+#        message: Right now it is {{ states("sensor.dark_sky_summary") } and it is {{ states("sensor.dark_sky_temperature") } °C

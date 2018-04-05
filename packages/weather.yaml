@@ -15,3 +15,18 @@ sensor:
       hours: 0
       minutes: 3
       seconds: 0
+# remove when iphone is purchased
+#automation: 
+#  - alias: 'Weather update'
+#    trigger:
+#      platform: time
+#      after: '06:00:00'
+#      before: '06:02:00'
+#    condition: 
+#    - condition: state
+#      entity_id: binary_sensor.workday
+#      state: on
+#    action:
+#      service: notify.ios.tobias_iphone
+#      data:
+#        message: Right now it is {{ states("sensor.dark_sky_summary") } and it is {{ states("sensor.dark_sky_temperature") } 

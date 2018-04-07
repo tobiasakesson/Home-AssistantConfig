@@ -88,3 +88,12 @@ rebeccasairlan:
   picture:
   track: false
   vendor: Philips Lighting BV
+
+iphonelan:
+  hide_if_away: false
+  icon:
+  mac: 18:AF:61:80:A2:B3
+  name: iPhone.lan
+  picture:
+  track: true
+  vendor: Apple, Inc.

@@ -14,6 +14,8 @@ homeassistant:
       friendly_name: Ping
       icon: mdi:timer
 
+#Group for seeing network information in HA
+
 group:
   network:
     name: Network
@@ -21,6 +23,8 @@ group:
       - sensor.speedtest_download
       - sensor.speedtest_upload
       - sensor.speedtest_ping
+
+#Sensor for the group above
 
 sensor:
   - platform: speedtest
@@ -33,3 +37,20 @@ sensor:
       - 6
       - 12
       - 18
+
+
+# Will notify when download speed or ping is below/above value
+
+automation:
+  - alias: Network error
+    trigger:
+      - platform: numeric_state
+        entity_id: sensor.speedtest_download
+        below: 60
+      - platform: numeric_state
+        entity_id: sensor.speedtest_ping
+        above: 20
+    action:
+      service: notify.telegram
+      data:
+        message: 'You only have {{ states.sensor.speedtest_download.state }} in download speed and {{ states.sensor.speedtest_ping.state }} in ping'

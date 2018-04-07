@@ -1,4 +1,3 @@
-
 homeassistant:
   name: Home
   latitude: !secret home_latitude
@@ -52,5 +51,12 @@ light:
   - platform: hue
     host: 192.168.1.116
 
-automation: !include automations.yaml
+# notifications until change to iphone
+
+telegram_bot:
+  - platform: polling
+    api_key: !secret telegram_api
+    allowed_chat_ids:
+      - !secret telegram_chatid
+
 script: !include scripts.yaml

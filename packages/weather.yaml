@@ -16,18 +16,16 @@ sensor:
       minutes: 3
       seconds: 0
 
-#automation: 
-#  - alias: 'Weather update'
-#    trigger:
-#      platform: time
-#      after: '06:00:00'
-#      before: '06:02:00'
-#    condition: 
-#    - condition: state
-#      entity_id: binary_sensor.workday
-#      state: on
-#    action:
-#      service: notify.telegram
-#      data:
-#        title: The weather
-#        message: Right now it is {{ states("sensor.dark_sky_summary") } and it is {{ states("sensor.dark_sky_temperature") } °C
+automation: 
+  - alias: Weather update
+    trigger:
+      - platform: time
+        at: '06:00:00'
+    condition:
+      - condition: state
+        entity_id: binary_sensor.workday
+        state: 'on'
+    action:
+      service: notify.telegram
+      data:
+        message: 'Right now it is {{ states.sensor.dark_sky_summary.state }} and {{ states.sensor.dark_sky_temperature.state }} °C outside'

@@ -97,3 +97,39 @@ iphonelan:
   picture:
   track: true
   vendor: Apple, Inc.
+
+galaxyj52016lan:
+  hide_if_away: false
+  icon:
+  mac: 00:87:01:BE:1A:50
+  name: Galaxy-J5-2016.lan
+  picture:
+  track: true
+  vendor: Samsung Electronics Co.,Ltd
+
+e8617e5a8735:
+  hide_if_away: false
+  icon:
+  mac: E8:61:7E:5A:87:35
+  name: e8617e5a8735
+  picture:
+  track: true
+  vendor: Liteon Technology Corporation
+
+huawei_p9_litelan:
+  hide_if_away: false
+  icon:
+  mac: 0C:8F:FF:07:AF:E4
+  name: HUAWEI P9 lite.lan
+  picture:
+  track: true
+  vendor: HUAWEI TECHNOLOGIES CO.,LTD
+
+709e29ca2d43:
+  hide_if_away: false
+  icon:
+  mac: 70:9E:29:CA:2D:43
+  name: 709e29ca2d43
+  picture:
+  track: true
+  vendor: Sony Interactive Entertainment Inc.

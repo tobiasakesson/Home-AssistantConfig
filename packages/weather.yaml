@@ -10,17 +10,20 @@ sensor:
       - summary
       - icon
       - temperature
+      - apparent_temperature_max
     update_interval:
       days: 0
       hours: 0
       minutes: 3
       seconds: 0
 
+# On workdays will send current weather and expexted top temperature of the day.
+
 automation: 
   - alias: Weather update
     trigger:
       - platform: time
-        at: '06:00:00'
+        at: '05:45:00'
     condition:
       - condition: state
         entity_id: binary_sensor.workday
@@ -28,4 +31,4 @@ automation:
     action:
       service: notify.telegram
       data:
-        message: 'Right now it is {{ states.sensor.dark_sky_summary.state }} and {{ states.sensor.dark_sky_temperature.state }} °C outside'
+        message: 'Right now it is {{ states.sensor.dark_sky_summary.state }} and {{ states.sensor.dark_sky_temperature.state }} °C outside the peak temp will be {{ states.sensor.dark_sky_daily_high_apparent_temperature.state }} °C'

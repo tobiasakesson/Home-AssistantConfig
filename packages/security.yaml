@@ -1,0 +1,14 @@
+# Will notify on phone if wrong password is entered on login.
+
+automation:
+  - alias: "Send notification upon failed login attempt"
+    trigger:
+      - platform: state
+        entity_id: persistent_notification.httplogin
+    condition:
+      - condition: template
+        value_template: "{{ states('persistent_notification.httplogin') != 'unknown' }}"
+    action:
+      - service: notify.telegram
+        data:
+          message: "Someone just tried login in with the wrong password, check the GUI for more information"

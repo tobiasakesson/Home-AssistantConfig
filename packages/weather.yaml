@@ -17,7 +17,9 @@ sensor:
       minutes: 3
       seconds: 0
 
+#
 # On workdays will send current weather and expexted top temperature of the day.
+# 
 
 automation: 
   - alias: Weather update

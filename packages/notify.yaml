@@ -4,5 +4,3 @@ notify:
     api_key: !secret telegram_api
     chat_id: !secret telegram_chatid
 
-
-# Will noti

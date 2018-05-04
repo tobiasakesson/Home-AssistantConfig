@@ -11,3 +11,5 @@ tts
 *.db-journal 
 *.db-shm 
 *.db-wal
+/OZW_Log.txt
+/pyozw.sqlite

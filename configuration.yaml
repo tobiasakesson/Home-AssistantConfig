@@ -8,9 +8,6 @@ homeassistant:
   customize: !include customize.yaml
   packages: !include_dir_named packages
 
-
-introduction:
-
 frontend:
 
 config:
@@ -50,6 +47,11 @@ tts:
 light: 
   - platform: hue
     host: 192.168.1.116
+
+# Z-wave
+
+zwave:
+  usb_path: /dev/ttyACM0
 
 # notifications until change to iphone
 

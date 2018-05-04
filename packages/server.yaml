@@ -13,6 +13,6 @@ sensor:
   - platform: systemmonitor
     resources:
       - type: disk_use_percent
-        arg: /home
+        arg: /
       - type: memory_use_percent
       - type: processor_use

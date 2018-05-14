@@ -28,7 +28,14 @@ group:
       - group.network
       - group.server
 
-  ### Rooms
+  Environment:
+    view: yes
+    entities:
+      - group.weather
+
+
+  ### Rooms and entities in that room.
+
 
   Vardagsrum:
     - light.hue_color_lamp_1

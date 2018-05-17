@@ -11,6 +11,7 @@ sensor:
       - icon
       - temperature
       - apparent_temperature_max
+      - precip_probability
     update_interval:
       days: 0
       hours: 0
@@ -33,4 +34,16 @@ automation:
     action:
       service: notify.telegram
       data:
-        message: 'Right now it is {{ states.sensor.dark_sky_summary.state }} and {{ states.sensor.dark_sky_temperature.state }} °C outside the peak temp will be {{ states.sensor.dark_sky_daily_high_apparent_temperature.state }} °C'
+        message: 'Right now it is {{ states.sensor.dark_sky_summary.state }} and {{ states.sensor.dark_sky_temperature.state }} °C outside, the peak temp today will be {{ states.sensor.dark_sky_daily_high_apparent_temperature.state }} °C'
+
+
+
+  - alias: Rain update
+    trigger:
+      - platform: numeric_state
+        entity_id: sensor.dark_sky_precip_probability
+        above: 70
+    action: 
+      service: notify.telegram
+      data: 
+        message: 'There will be rain'

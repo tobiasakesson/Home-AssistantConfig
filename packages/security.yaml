@@ -11,4 +11,4 @@ automation:
     action:
       - service: notify.telegram
         data:
-          message: "Someone just tried login in with the wrong password, check the GUI for more information"
+          message: "{{ states.persistent_notification.httplogin.attributes.message }}"

@@ -1,0 +1,31 @@
+
+automation:
+  - alias: Change Brightness
+    trigger:
+      - platform: state
+        entity_id: input_number.lamp_bright
+      - platform: state
+        entity_id: input_number.lamp_temp
+    action:
+      - service: light.turn_on
+        data_template:
+          entity_id: light.hue_lightstrip_plus_1
+          brightness: "{{ trigger.to_state.state | int }}"
+      - service: light.turn_on
+        data_template:
+          entity_id: light.hue_lightstrip_plus_1
+          color_temp: "{{ trigger.to_state.state | int }}"
+
+input_number:
+  lamp_bright:
+    name: Lamp Brightness
+    initial: 0
+    min: 0
+    max: 255
+    step: 10
+  lamp_temp:
+    name: Lamp Temp
+    initial: 300
+    min: 154
+    max: 500
+    step: 10

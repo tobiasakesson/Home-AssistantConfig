@@ -11,9 +11,10 @@ group:
     view: yes
     icon: mdi:earth
     entities:
-      - group.vardagsrum
-      - group.sovrum
+      - group.living_room
+      - group.bedroom
       - group.weather
+      - group.computer_room
 
   Work View:
     view: yes
@@ -27,6 +28,7 @@ group:
     entities:
       - group.network
       - group.server
+      - group.all_devices
 
   Environment:
     view: yes
@@ -37,12 +39,25 @@ group:
   ### Rooms and entities in that room.
 
 
-  Vardagsrum:
-    - light.hue_color_lamp_1
-    - light.hue_color_lamp_2
+  Living_room:
+    name: Living Room
+    entities:
+      - light.hue_color_lamp_1
+      - light.hue_color_lamp_2
 
-  Sovrum:
-    - light.hue_color_lamp_3
+  Bedroom:
+    name: Bedroom
+    entities:
+      - light.hue_color_lamp_3
+
+  Computer_room:
+    name: Computer Room
+    entities:
+      - light.hue_lightstrip_plus_1
+      - switch.wake_on_lan
+      - input_number.lamp_bright
+      - input_number.lamp_temp
+      - switch.switch
 
   ### Workday
 

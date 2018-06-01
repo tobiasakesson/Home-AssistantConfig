@@ -133,3 +133,12 @@ huawei_p9_litelan:
   picture:
   track: true
   vendor: Sony Interactive Entertainment Inc.
+
+l2018244lan:
+  hide_if_away: false
+  icon:
+  mac: 90:61:AE:54:82:DD
+  name: L-2018-244.lan
+  picture:
+  track: true
+  vendor: Intel Corporate

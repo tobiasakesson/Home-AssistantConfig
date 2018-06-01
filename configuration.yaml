@@ -36,9 +36,15 @@ sun:
 device_tracker:
   - platform: nmap_tracker
     hosts: 192.168.1.0/24
-    home_interval: 1
+    home_interval: 2
     exclude:
      - 192.168.1.211
+
+switch:
+  - platform: wake_on_lan
+    name: PC
+    host: 192.168.1.240
+    mac_address: "4C-CC-6A-6B-EE-D8"
 
 tts:
   - platform: google
@@ -51,7 +57,7 @@ light:
 # Z-wave
 
 zwave:
-  usb_path: /dev/ttyACM0
+  usb_path: /dev/ttyACM1
 
 # notifications until change to iphone
 

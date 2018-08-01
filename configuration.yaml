@@ -57,7 +57,7 @@ light:
 # Z-wave
 
 zwave:
-  usb_path: /dev/ttyACM1
+  usb_path: /dev/ttyACM0
 
 # notifications until change to iphone
 

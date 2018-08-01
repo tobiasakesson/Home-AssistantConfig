@@ -13,3 +13,5 @@ tts
 *.db-wal
 /OZW_Log.txt
 /pyozw.sqlite
+*.save
+.storage

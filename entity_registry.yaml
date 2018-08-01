@@ -1,28 +1,45 @@
 media_player.medierum:
+  config_entry_id:
   name: Sonos
   platform: sonos
   unique_id: RINCON_5CAAFD30E0AC01400
 media_player.akesson:
+  config_entry_id:
   name: Chromecast
   platform: cast
   unique_id: e569b026-1a4c-e3c3-159c-e3e93e6c4767
 light.hue_color_lamp_3:
+  config_entry_id:
   name: Taklampa
   platform: hue
   unique_id: 00:17:88:01:03:01:b9:3f-0b
 light.hue_color_lamp_1:
+  config_entry_id:
   name: Soffa
   platform: hue
   unique_id: 00:17:88:01:03:01:c0:9a-0b
 light.hue_color_lamp_2:
+  config_entry_id:
   name: Matbord
   platform: hue
   unique_id: 00:17:88:01:03:01:c0:ce-0b
 light.hue_lightstrip_plus_1:
+  config_entry_id:
   name: Datorbord
   platform: hue
   unique_id: 00:17:88:01:03:f5:2e:8f-0b
 switch.switch:
+  config_entry_id:
   name: switch_1
   platform: zwave
   unique_id: 2-72057594076282880
+zwave.aeotec_zw090_zstick_gen5_eu:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: node-1
+zwave.telldus_tzwp100_plugin_switch:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: node-2

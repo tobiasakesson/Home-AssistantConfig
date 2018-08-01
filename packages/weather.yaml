@@ -10,8 +10,9 @@ sensor:
       - summary
       - icon
       - temperature
-      - apparent_temperature_max
-      - precip_probability
+      - temperature_high
+      - temperature_low
+      - hourly_summary
     update_interval:
       days: 0
       hours: 0
@@ -20,13 +21,13 @@ sensor:
 
 #
 # On workdays will send current weather and expexted top temperature of the day.
-# 
+#
 
 automation: 
   - alias: Weather update
     trigger:
       - platform: time
-        at: '07:00:00'
+        at: '07:10:00'
     condition:
       - condition: state
         entity_id: binary_sensor.workday
@@ -34,16 +35,16 @@ automation:
     action:
       service: notify.telegram
       data:
-        message: 'Right now it is {{ states.sensor.dark_sky_summary.state }} and {{ states.sensor.dark_sky_temperature.state }} °C outside, the peak temp today will be {{ states.sensor.dark_sky_daily_high_apparent_temperature.state }} °C'
+        message: 'Right now it is {{ states.sensor.dark_sky_summary.state }} and {{ states.sensor.dark_sky_temperature.state }} °C outside, the peak temp today will be {{ states.sensor.dark_sky_daytime_high_temperature.state }} °C'
 
 
 
-  - alias: Rain update
-    trigger:
-      - platform: numeric_state
-        entity_id: sensor.dark_sky_precip_probability
-        above: 70
-    action: 
-      service: notify.telegram
-      data: 
-        message: 'There will be rain'
+#  - alias: Temp update
+#    trigger:
+#      - platform: numeric_state
+#        entity_id: sensor.dark_sky_temperature.state
+#        above: 30
+#    action: 
+#      service: notify.telegram
+#      data: 
+#        message: 'Is hot as balls'

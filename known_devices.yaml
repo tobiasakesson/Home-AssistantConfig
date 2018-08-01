@@ -142,3 +142,84 @@ l2018244lan:
   picture:
   track: true
   vendor: Intel Corporate
+
+macbooklan:
+  hide_if_away: false
+  icon:
+  mac: 88:E9:FE:71:37:C8
+  name: MacBook.lan
+  picture:
+  track: true
+  vendor: Apple, Inc.
+
+d485646ab3ba:
+  hide_if_away: false
+  icon:
+  mac: D4:85:64:6A:B3:BA
+  name: d485646ab3ba
+  picture:
+  track: true
+  vendor: Hewlett Packard
+
+rebeccansiphonelan:
+  hide_if_away: false
+  icon:
+  mac: D8:8F:76:56:47:78
+  name: RebeccansiPhone.lan
+  picture:
+  track: true
+  vendor: Apple, Inc.
+
+00a0981dfc6c:
+  hide_if_away: false
+  icon:
+  mac: 00:A0:98:1D:FC:6C
+  name: 00a0981dfc6c
+  picture:
+  track: true
+  vendor: NetApp
+
+00a0987b50bd:
+  hide_if_away: false
+  icon:
+  mac: 00:A0:98:7B:50:BD
+  name: 00a0987b50bd
+  picture:
+  track: true
+  vendor: NetApp
+
+00a0981e1516:
+  hide_if_away: false
+  icon:
+  mac: 00:A0:98:1E:15:16
+  name: 00a0981e1516
+  picture:
+  track: true
+  vendor: NetApp
+
+00a0983666c6:
+  hide_if_away: false
+  icon:
+  mac: 00:A0:98:36:66:C6
+  name: 00a0983666c6
+  picture:
+  track: true
+  vendor: NetApp
+
+00a0981a2c41:
+  hide_if_away: false
+  icon:
+  mac: 00:A0:98:1A:2C:41
+  name: 00a0981a2c41
+  picture:
+  track: true
+  vendor: NetApp
+
+debianlan:
+  hide_if_away: false
+  icon:
+  mac: 00:A0:98:73:CC:98
+  name: debian.lan
+  picture:
+  track: true
+  vendor: NetApp

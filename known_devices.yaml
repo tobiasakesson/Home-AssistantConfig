@@ -1,13 +1,3 @@
-
-dsldevicelan:
-  hide_if_away: false
-  icon:
-  mac: E0:B9:E5:EE:2F:62
-  name: dsldevice.lan
-  picture:
-  track: false
-  vendor: Technicolor
-
 sonoszplan:
   hide_if_away: false
   icon:
@@ -53,15 +43,6 @@ rebeccasiphonelan:
   track: true
   vendor: Apple, Inc.
 
-70af24092859:
-  hide_if_away: false
-  icon:
-  mac: 70:AF:24:09:28:59
-  name: 70af24092859
-  picture:
-  track: false
-  vendor: TP Vision Belgium NV
-
 chromecastlan:
   hide_if_away: false
   icon:
@@ -71,15 +52,6 @@ chromecastlan:
   track: false
   vendor: AzureWave Technology Inc.
 
-rebeccasairlan:
-  hide_if_away: false
-  icon:
-  mac: 5C:F9:38:93:67:30
-  name: Rebeccas Macbook
-  picture:
-  track: true
-  vendor: Apple, Inc.
-
 00178877c894:
   hide_if_away: false
   icon:
@@ -88,51 +60,6 @@ rebeccasairlan:
   picture:
   track: false
   vendor: Philips Lighting BV
-
-iphonelan:
-  hide_if_away: false
-  icon:
-  mac: 18:AF:61:80:A2:B3
-  name: iPhone.lan
-  picture:
-  track: true
-  vendor: Apple, Inc.
-
-galaxyj52016lan:
-  hide_if_away: false
-  icon:
-  mac: 00:87:01:BE:1A:50
-  name: Galaxy-J5-2016.lan
-  picture:
-  track: true
-  vendor: Samsung Electronics Co.,Ltd
-
-e8617e5a8735:
-  hide_if_away: false
-  icon:
-  mac: E8:61:7E:5A:87:35
-  name: e8617e5a8735
-  picture:
-  track: true
-  vendor: Liteon Technology Corporation
-
-huawei_p9_litelan:
-  hide_if_away: false
-  icon:
-  mac: 0C:8F:FF:07:AF:E4
-  name: HUAWEI P9 lite.lan
-  picture:
-  track: true
-  vendor: HUAWEI TECHNOLOGIES CO.,LTD
-
-709e29ca2d43:
-  hide_if_away: false
-  icon:
-  mac: 70:9E:29:CA:2D:43
-  name: 709e29ca2d43
-  picture:
-  track: true
-  vendor: Sony Interactive Entertainment Inc.
 
 l2018244lan:
   hide_if_away: false
@@ -152,15 +79,6 @@ macbooklan:
   track: true
   vendor: Apple, Inc.
 
-d485646ab3ba:
-  hide_if_away: false
-  icon:
-  mac: D4:85:64:6A:B3:BA
-  name: d485646ab3ba
-  picture:
-  track: true
-  vendor: Hewlett Packard
-
 rebeccansiphonelan:
   hide_if_away: false
   icon:
@@ -170,51 +88,6 @@ rebeccansiphonelan:
   track: true
   vendor: Apple, Inc.
 
-00a0981dfc6c:
-  hide_if_away: false
-  icon:
-  mac: 00:A0:98:1D:FC:6C
-  name: 00a0981dfc6c
-  picture:
-  track: true
-  vendor: NetApp
-
-00a0987b50bd:
-  hide_if_away: false
-  icon:
-  mac: 00:A0:98:7B:50:BD
-  name: 00a0987b50bd
-  picture:
-  track: true
-  vendor: NetApp
-
-00a0981e1516:
-  hide_if_away: false
-  icon:
-  mac: 00:A0:98:1E:15:16
-  name: 00a0981e1516
-  picture:
-  track: true
-  vendor: NetApp
-
-00a0983666c6:
-  hide_if_away: false
-  icon:
-  mac: 00:A0:98:36:66:C6
-  name: 00a0983666c6
-  picture:
-  track: true
-  vendor: NetApp
-
-00a0981a2c41:
-  hide_if_away: false
-  icon:
-  mac: 00:A0:98:1A:2C:41
-  name: 00a0981a2c41
-  picture:
-  track: true
-  vendor: NetApp
-
 debianlan:
   hide_if_away: false
   icon:
@@ -223,3 +96,19 @@ debianlan:
   picture:
   track: true
   vendor: NetApp
+
+iphonelan_2:
+  hide_if_away: false
+  icon:
+  mac: F8:38:80:72:77:6A
+  name: iPhone.lan
+  picture:
+  track: true
+
+tobias_iphone:
+  hide_if_away: false
+  icon:
+  mac:
+  name: tobias iphone
+  picture:
+  track: true

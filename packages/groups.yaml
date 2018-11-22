@@ -13,15 +13,10 @@ group:
     entities:
       - group.living_room
       - group.bedroom
-      - group.weather
       - group.computer_room
+      - group.weather
+#      - group.alarm_clock
 
-  Work View:
-    view: yes
-    icon: mdi:worker
-    entities:
-      - group.workday
-  
   Network View:
     view: yes
     icon: mdi:server-network
@@ -34,10 +29,11 @@ group:
     view: yes
     entities:
       - group.weather
+      - group.workday
 
+  ### Groups (rooms) and entities in that group.
 
-  ### Rooms and entities in that room.
-
+  ### Default
 
   Living_room:
     name: Living Room
@@ -56,7 +52,6 @@ group:
       - light.hue_lightstrip_plus_1
       - switch.pc
       - input_number.lamp_bright
-      - input_number.lamp_temp
       - switch.switch
 
   ### Workday
@@ -71,7 +66,7 @@ group:
     - sensor.speedtest_download
     - sensor.speedtest_upload
     - sensor.speedtest_ping
- 
+
   Server:
     - sensor.disk_use_percent_
     - sensor.memory_use_percent
@@ -85,3 +80,13 @@ group:
     - sensor.dark_sky_temperature
     - sun.sun
 
+
+  ### Alarm
+
+ # Alarm_clock:
+ #   name: 'Alarm Clock'
+ #   entities:
+ #     - sensor.alarm_clock_time
+ #     - input_slider.alarm_clock_hour
+ #     - input_slider.alarm_clock_minute
+ #     - input_boolean.alarm_clock_status

@@ -32,19 +32,13 @@ map:
 
 sun:
 
-# Tracks devices on network
-device_tracker:
-  - platform: nmap_tracker
-    hosts: 192.168.1.0/24
-    home_interval: 2
-    exclude:
-     - 192.168.1.211
+ios:
 
 switch:
   - platform: wake_on_lan
     name: PC
-    host: 192.168.1.240
-    mac_address: "4C-CC-6A-6B-EE-D8"
+    host: 192.168.1.224
+    mac_address: "18-31-BF-BE-2F-97"
 
 tts:
   - platform: google

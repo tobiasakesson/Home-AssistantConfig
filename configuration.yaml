@@ -52,6 +52,7 @@ light:
 
 zwave:
   usb_path: /dev/ttyACM0
+  polling_interval: 30000
 
 # notifications until change to iphone
 

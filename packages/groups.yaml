@@ -15,6 +15,7 @@ group:
       - group.bedroom
       - group.computer_room
       - group.weather
+      - group.hallway
 #      - group.alarm_clock
 
   Network View:
@@ -53,6 +54,12 @@ group:
       - switch.pc
       - input_number.lamp_bright
       - switch.switch
+
+  Hallway:
+    name: Hallway
+    entities:
+      - sensor.fibaro_system_unknown_type0801_id1002_temperature_3
+      - sensor.fibaro_system_unknown_type0801_id1002_luminance_3
 
   ### Workday
 

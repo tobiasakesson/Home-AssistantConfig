@@ -43,3 +43,63 @@ zwave.telldus_tzwp100_plugin_switch:
   name:
   platform: zwave
   unique_id: node-2
+sensor.tobias_iphone_battery_state:
+  config_entry_id:
+  name:
+  platform: ios
+  unique_id: state_tobias_iphone
+sensor.tobias_iphone_battery_level:
+  config_entry_id:
+  name:
+  platform: ios
+  unique_id: level_tobias_iphone
+sensor.fibaro_system_unknown_type0801_id1002_temperature_3:
+  config_entry_id:
+  name: Temperatur
+  platform: zwave
+  unique_id: 6-72057594143588370
+sensor.fibaro_system_unknown_type0801_id1002_luminance_3:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 6-72057594143588402
+sensor.fibaro_system_unknown_type0801_id1002_seismic_intensity_3:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 6-72057594143588754
+sensor.fibaro_system_unknown_type0801_id1002_sourcenodeid_3:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 6-72057594144636961
+sensor.fibaro_system_unknown_type0801_id1002_burglar_3:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 6-72057594144637089
+sensor.fibaro_system_unknown_type0801_id1002_general_3:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 6-72057594145341441
+zwave.fibaro_system_unknown_type0801_id1002_3:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: node-6
+binary_sensor.fibaro_system_unknown_type0801_id1002_sensor_3:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 6-72057594143571968
+sensor.fibaro_system_unknown_type0801_id1002_alarm_type_3:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 6-72057594144636929
+sensor.fibaro_system_unknown_type0801_id1002_alarm_level_3:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 6-72057594144636945

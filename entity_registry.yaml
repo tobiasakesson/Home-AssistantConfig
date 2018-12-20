@@ -60,7 +60,7 @@ sensor.fibaro_system_unknown_type0801_id1002_temperature_3:
   unique_id: 6-72057594143588370
 sensor.fibaro_system_unknown_type0801_id1002_luminance_3:
   config_entry_id:
-  name:
+  name: Ljusstyrka
   platform: zwave
   unique_id: 6-72057594143588402
 sensor.fibaro_system_unknown_type0801_id1002_seismic_intensity_3:

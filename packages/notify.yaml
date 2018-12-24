@@ -1,6 +1,6 @@
-notify:
-  - platform: telegram 
-    name: telegram 
-    api_key: !secret telegram_api
-    chat_id: !secret telegram_chatid
+#notify:
+#  - platform: telegram 
+#    name: telegram 
+#    api_key: !secret telegram_api
+#    chat_id: !secret telegram_chatid
 

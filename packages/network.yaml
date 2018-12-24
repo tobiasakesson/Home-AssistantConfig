@@ -51,6 +51,8 @@ automation:
         entity_id: sensor.speedtest_ping
         above: 20
     action:
-      service: notify.telegram
+#      service: notify.telegram
+      service:: notify.ios_tobias_iphone
       data:
+        title: Network information.
         message: 'You only have {{ states.sensor.speedtest_download.state }} in download speed and {{ states.sensor.speedtest_ping.state }} in ping'

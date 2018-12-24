@@ -1,3 +1,4 @@
+
 #
 # Weather
 #
@@ -33,18 +34,9 @@ automation:
         entity_id: binary_sensor.workday
         state: 'on'
     action:
-      service: notify.telegram
+#      service: notify.telegram
+      service: notify.ios_tobias_iphone
       data:
+        title: Daily weather update
         message: 'Right now it is {{ states.sensor.dark_sky_summary.state }} and {{ states.sensor.dark_sky_temperature.state }} °C outside, the peak temp today will be {{ states.sensor.dark_sky_daytime_high_temperature.state }} °C'
 
-
-
-#  - alias: Temp update
-#    trigger:
-#      - platform: numeric_state
-#        entity_id: sensor.dark_sky_temperature.state
-#        above: 30
-#    action: 
-#      service: notify.telegram
-#      data: 
-#        message: 'Is hot as balls'

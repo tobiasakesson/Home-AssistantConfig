@@ -60,6 +60,7 @@ group:
     entities:
       - sensor.fibaro_system_unknown_type0801_id1002_temperature_3
       - sensor.fibaro_system_unknown_type0801_id1002_luminance_3
+      - sensor.fibaro_system_unknown_type0801_id1002_burglar_3
 
   ### Workday
 

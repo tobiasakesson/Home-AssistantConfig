@@ -1,12 +1,3 @@
-sonoszplan:
-  hide_if_away: false
-  icon:
-  mac: 5C:AA:FD:30:E0:AC
-  name: SonosZP.lan
-  picture:
-  track: false
-  vendor: unknown
-
 tg799tsvacxtreamapee2f6clan:
   hide_if_away: false
   icon:
@@ -16,29 +7,11 @@ tg799tsvacxtreamapee2f6clan:
   track: false
   vendor: unknown
 
-oneplus_3tlan:
-  hide_if_away: false
-  icon:
-  mac: C0:EE:FB:FA:52:E6
-  name: Tobias Telefon
-  picture:
-  track: true
-  vendor: OnePlus Tech (Shenzhen) Ltd
-
 tobiassmbplan:
   hide_if_away: false
   icon:
   mac: 3C:15:C2:D7:DB:2A
   name: Tobias Mac
-  picture:
-  track: true
-  vendor: Apple, Inc.
-
-rebeccasiphonelan:
-  hide_if_away: false
-  icon:
-  mac: 48:4B:AA:18:01:FC
-  name: Rebeccas Telefon
   picture:
   track: true
   vendor: Apple, Inc.
@@ -70,24 +43,6 @@ l2018244lan:
   track: true
   vendor: Intel Corporate
 
-macbooklan:
-  hide_if_away: false
-  icon:
-  mac: 88:E9:FE:71:37:C8
-  name: MacBook.lan
-  picture:
-  track: true
-  vendor: Apple, Inc.
-
-rebeccansiphonelan:
-  hide_if_away: false
-  icon:
-  mac: D8:8F:76:56:47:78
-  name: RebeccansiPhone.lan
-  picture:
-  track: true
-  vendor: Apple, Inc.
-
 debianlan:
   hide_if_away: false
   icon:
@@ -96,14 +51,6 @@ debianlan:
   picture:
   track: true
   vendor: NetApp
-
-iphonelan_2:
-  hide_if_away: false
-  icon:
-  mac: F8:38:80:72:77:6A
-  name: iPhone.lan
-  picture:
-  track: true
 
 tobias_iphone:
   hide_if_away: false

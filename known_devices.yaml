@@ -16,15 +16,6 @@ tobiassmbplan:
   track: true
   vendor: Apple, Inc.
 
-chromecastlan:
-  hide_if_away: false
-  icon:
-  mac: 6C:AD:F8:BF:40:90
-  name: Chromecast.lan
-  picture:
-  track: false
-  vendor: AzureWave Technology Inc.
-
 00178877c894:
   hide_if_away: false
   icon:
@@ -59,3 +50,4 @@ tobias_iphone:
   name: tobias iphone
   picture:
   track: true
+

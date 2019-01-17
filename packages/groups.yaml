@@ -43,10 +43,10 @@ group:
       - light.hue_color_lamp_2
       - switch.switch
 
-  Bedroom:
-    name: Bedroom
-    entities:
-      - light.hue_color_lamp_3
+ # Bedroom:
+ #   name: Bedroom
+ #   entities:
+ #     - light.hue_color_lamp_3
 
   Computer_room:
     name: Computer Room

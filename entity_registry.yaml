@@ -65,7 +65,7 @@ sensor.fibaro_system_unknown_type0801_id1002_sourcenodeid_3:
   unique_id: 6-72057594144636961
 sensor.fibaro_system_unknown_type0801_id1002_burglar_3:
   config_entry_id:
-  name: "Motion sensor"
+  name: Motion sensor
   platform: zwave
   unique_id: 6-72057594144637089
 sensor.fibaro_system_unknown_type0801_id1002_general_3:
@@ -93,3 +93,8 @@ sensor.fibaro_system_unknown_type0801_id1002_alarm_level_3:
   name:
   platform: zwave
   unique_id: 6-72057594144636945
+media_player.65pus736312:
+  config_entry_id: 310ae4144dc84d20b3f0f375e9a44d50
+  name:
+  platform: cast
+  unique_id: 240ad583-3d97-98da-9e0e-ae94897b4aad

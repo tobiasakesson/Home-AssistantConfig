@@ -98,3 +98,28 @@ media_player.65pus736312:
   name:
   platform: cast
   unique_id: 240ad583-3d97-98da-9e0e-ae94897b4aad
+media_player.viskan__by_the_pantry:
+  config_entry_id: 310ae4144dc84d20b3f0f375e9a44d50
+  name:
+  platform: cast
+  unique_id: 83439223-be02-d220-064d-7d70711a0f8e
+media_player.viskan:
+  config_entry_id: 310ae4144dc84d20b3f0f375e9a44d50
+  name:
+  platform: cast
+  unique_id: 7bf18bda-1571-4189-98ae-995164f158be
+media_player.viskanwindow:
+  config_entry_id: 310ae4144dc84d20b3f0f375e9a44d50
+  name:
+  platform: cast
+  unique_id: aa213a19-8929-0932-e040-e23cfcc5702e
+media_player.apple_tv:
+  config_entry_id:
+  name:
+  platform: apple_tv
+  unique_id: bf35da8f5ea0ac03d37e1e6e142e3df0bbf0e11aa8dcde53aeb1c0bc74c8d67f
+remote.apple_tv:
+  config_entry_id:
+  name:
+  platform: apple_tv
+  unique_id: bf35da8f5ea0ac03d37e1e6e142e3df0bbf0e11aa8dcde53aeb1c0bc74c8d67f

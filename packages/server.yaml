@@ -2,7 +2,7 @@
 
 homeassistant:
   customize:
-    sensor.disk_use_percent_:
+    sensor.disk_use_percent:
       friendly_name: Disk usage
     sensor.memory_use_percent:
       friendly_name: Memory usage
@@ -16,3 +16,4 @@ sensor:
         arg: /
       - type: memory_use_percent
       - type: processor_use
+      - type: last_boot

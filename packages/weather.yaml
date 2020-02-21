@@ -14,7 +14,10 @@ sensor:
       - temperature_high
       - temperature_low
       - hourly_summary
-    update_interval:
+      - apparent_temperature
+    forecast:
+      - 0
+    scan_interval:
       days: 0
       hours: 0
       minutes: 3
@@ -38,5 +41,5 @@ automation:
       service: notify.ios_tobias_iphone
       data:
         title: Daily weather update
-        message: 'Right now it is {{ states.sensor.dark_sky_summary.state }} and {{ states.sensor.dark_sky_temperature.state }} °C outside, the peak temp today will be {{ states.sensor.dark_sky_daytime_high_temperature.state }} °C'
+        message: 'Right now it is {{ states.sensor.dark_sky_summary.state }} and {{ states.sensor.dark_sky_temperature.state }} °C outside, the peak temp today will be {{ states.sensor.dark_sky_daytime_high_temperature_0d.state }} °C and the lowest is {{ states.sensor.dark_sky_overnight_low_temperature_0d.state }} °C '
 

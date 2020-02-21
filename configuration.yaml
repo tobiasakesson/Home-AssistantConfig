@@ -1,65 +1,58 @@
+
 homeassistant:
-  name: Home
-  latitude: !secret home_latitude
-  longitude: !secret home_longitude
-  elevation: !secret elevation
-  unit_system: metric
-  time_zone: Europe/Stockholm
-  customize: !include customize.yaml
   packages: !include_dir_named packages
 
-frontend:
+#ssl_cert: !secret ssl_cert
+#ssl_key: !secret ssl_key
+#base_url: home.tobiasakesson.com
 
-config:
+# Configure a default setup of Home Assistant (frontend, api, etc)
+default_config:
 
-http:
-    api_password: !secret http_password
-#    base_url: !http_url
-    ssl_certificate: !secret ssl_certificate
-    ssl_key: !secret ssl_key
+# Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+# http:
+#   base_url: example.duckdns.org:8123
+
+# Text to speech
+tts:
+  - platform: google_translate
 
 updater:
 
 discovery:
 
-conversation:
-
-history:
-
-logbook:
-
-map:
-
-sun:
-
 ios:
-
-switch:
-  - platform: wake_on_lan
-    name: PC
-    host: 192.168.1.224
-    mac_address: "18-31-BF-BE-2F-97"
-
-tts:
-  - platform: google
-
-# Philips hue
-light: 
-  - platform: hue
-    host: 192.168.1.116
-
-# Z-wave
 
 zwave:
   usb_path: /dev/ttyACM0
   polling_interval: 30000
 
-# notifications until change to iphone
 
-#telegram_bot:
-#  - platform: polling
-#    api_key: !secret telegram_api
-#    allowed_chat_ids:
-#      - !secret telegram_chatid
+#cloud:
 
+#config:
+
+#frontend:
+
+#history:
+
+#logbook:
+
+#map:
+
+#mobile_app:
+
+#person:
+
+#script:
+
+#ssdp:
+
+#sun:
+
+#system_health:
+
+#zeroconf:
+
+#automation: !include automations.yaml
 script: !include scripts.yaml

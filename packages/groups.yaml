@@ -10,13 +10,13 @@ group:
   Default View:
     view: yes
     icon: mdi:earth
+#    cards:
     entities:
       - group.living_room
       - group.bedroom
       - group.computer_room
       - group.weather
-      - group.hallway
-#      - group.alarm_clock
+#      - group.hallway
 
   Network View:
     view: yes
@@ -40,8 +40,8 @@ group:
     name: Living Room
     entities:
       - light.hue_color_lamp_1
-      - light.hue_color_lamp_2
-      - switch.switch
+#      - light.hue_color_lamp_2
+#      - switch.switch
 
  # Bedroom:
  #   name: Bedroom
@@ -52,15 +52,15 @@ group:
     name: Computer Room
     entities:
       - light.hue_lightstrip_plus_1
-      - switch.pc
+#      - switch.pc
 #      - input_number.lamp_bright
 
-  Hallway:
-    name: Hallway
-    entities:
-      - sensor.fibaro_system_unknown_type0801_id1002_temperature_3
-      - sensor.fibaro_system_unknown_type0801_id1002_luminance_3
-      - sensor.fibaro_system_unknown_type0801_id1002_burglar_3
+#  Hallway:
+#    name: Hallway
+#    entities:
+#      - sensor.fibaro_system_unknown_type0801_id1002_temperature_3
+#      - sensor.fibaro_system_unknown_type0801_id1002_luminance_3
+#      - sensor.fibaro_system_unknown_type0801_id1002_burglar_3
 
   ### Workday
 
@@ -76,9 +76,10 @@ group:
     - sensor.speedtest_ping
 
   Server:
-    - sensor.disk_use_percent_
+    - sensor.disk_use_percent
     - sensor.memory_use_percent
     - sensor.processor_use
+    - sensor.last_boot
 
   ### Weather
 
@@ -88,13 +89,3 @@ group:
     - sensor.dark_sky_temperature
     - sun.sun
 
-
-  ### Alarm
-
- # Alarm_clock:
- #   name: 'Alarm Clock'
- #   entities:
- #     - sensor.alarm_clock_time
- #     - input_slider.alarm_clock_hour
- #     - input_slider.alarm_clock_minute
- #     - input_boolean.alarm_clock_status

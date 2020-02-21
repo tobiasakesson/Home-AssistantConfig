@@ -1,53 +1,8 @@
-tg799tsvacxtreamapee2f6clan:
-  hide_if_away: false
-  icon:
-  mac: E2:B9:E5:EE:2F:6B
-  name: TG799TSvacXtream-AP-EE2F6C.lan
-  picture:
-  track: false
-  vendor: unknown
-
-tobiassmbplan:
-  hide_if_away: false
-  icon:
-  mac: 3C:15:C2:D7:DB:2A
-  name: Tobias Mac
-  picture:
-  track: true
-  vendor: Apple, Inc.
-
-00178877c894:
-  hide_if_away: false
-  icon:
-  mac: 00:17:88:77:C8:94
-  name: 00178877c894
-  picture:
-  track: false
-  vendor: Philips Lighting BV
-
-l2018244lan:
-  hide_if_away: false
-  icon:
-  mac: 90:61:AE:54:82:DD
-  name: L-2018-244.lan
-  picture:
-  track: true
-  vendor: Intel Corporate
-
-debianlan:
-  hide_if_away: false
-  icon:
-  mac: 00:A0:98:73:CC:98
-  name: debian.lan
-  picture:
-  track: true
-  vendor: NetApp
 
 tobias_iphone:
   hide_if_away: false
   icon:
   mac:
-  name: tobias iphone
+  name: 'iPhone '
   picture:
   track: true
-

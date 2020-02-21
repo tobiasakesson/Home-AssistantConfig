@@ -22,7 +22,7 @@ group:
     view: yes
     icon: mdi:server-network
     entities:
-      - group.network
+#      - group.network
       - group.server
       - group.all_devices
 
